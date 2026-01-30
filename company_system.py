@@ -1,3 +1,4 @@
+from storage import DataStorage
 from company_service import CompanyService
 from enums import EmployeeType
 from utils import pause, validate_positive_int, validate_name, validate_age, validate_bonus, Check_data
@@ -5,6 +6,7 @@ from utils import pause, validate_positive_int, validate_name, validate_age, val
 class CompanySystem:
     def __init__(self):
         self.service = CompanyService()
+        DataStorage.load(self.service)
 
     # ---------------- ADD DEPARTMENT ----------------
     def add_department(self):

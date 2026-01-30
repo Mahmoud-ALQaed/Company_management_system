@@ -1,0 +1,51 @@
+{
+    "employees": [
+        {
+            "id": 2,
+            "name": "Ahmed",
+            "age": 44,
+            "salary": 5000,
+            "type": "Manager",
+            "bonus": 500
+        },
+        {
+            "id": 1,
+            "name": "Ali",
+            "age": 33,
+            "salary": 600,
+            "type": "Worker",
+            "bonus": null
+        },
+        {
+            "id": 3,
+            "name": "Mahmoud",
+            "age": 22,
+            "salary": 400,
+            "type": "Worker",
+            "bonus": null
+        }
+    ],
+    "departments": [
+        {
+            "id": 1,
+            "name": "IT",
+            "employees": [
+                1
+            ]
+        },
+        {
+            "id": 2,
+            "name": "HR",
+            "employees": [
+                2
+            ]
+        },
+        {
+            "id": 3,
+            "name": "sales",
+            "employees": [
+                3
+            ]
+        }
+    ]
+}

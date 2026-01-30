@@ -1,3 +1,4 @@
+from storage import DataStorage
 from company_system import CompanySystem
 from enums import EmployeeType
 
@@ -52,6 +53,7 @@ def main():
         elif choice == "15":
             system.transfer_employee() 
         elif choice == "0":
+            DataStorage.save(system.service)
             print("Goodbye")
             break
         else:
